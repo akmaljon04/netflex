@@ -1,0 +1,45 @@
+.listem {
+  width: 100%;
+  background-color: #141414;
+  color: white;
+}
+.list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.cart {
+  width: 310px;
+  height: 200px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+.cart:active {
+  transform: translateY(2px);
+  transition: 0.5s;
+}
+.top-cart {
+  width: 310px;
+  height: 160px;
+}
+/* .slick-img{
+  width: 310px;
+  height: 160px;
+} */
+.cart-foto {
+  width: 308px !important;
+  height: 160px !important;
+  object-fit: cover;
+}
+.bottom-cart {
+  width: 309px;
+  height: 40px;
+  background-color: #b9090b;
+}
+.cart-title {
+  text-align: center;
+  position: relative;
+  top: 10px;
+  font-weight: 50;
+}

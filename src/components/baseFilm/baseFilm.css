@@ -1,0 +1,40 @@
+.basefilm {
+  width: 100%;
+  background-color: #141414;
+  color: white;
+}
+.nextfilm {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.box {
+  width: 310px;
+  height: 200px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.box:active {
+  transform: translateY(2px);
+}
+.top-box {
+  width: 310px;
+  height: 160px;
+}
+.box-foto {
+  width: 308px;
+  height: 160px;
+  object-fit: cover;
+}
+.bottom-box {
+  width: 309px;
+  height: 40px;
+  background-color: #b9090b;
+}
+.box-title {
+  text-align: center;
+  position: relative;
+  top: 10px;
+  font-weight: 50;
+}

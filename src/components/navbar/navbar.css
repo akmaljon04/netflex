@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  z-index: 110;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 11vh;
+  position: fixed;
+  width: 100%;
+  background-color: #141414;
+}
+.fa-solid {
+  position: relative;
+  right: 23px;
+  top: 1px;
+  color: black;
+}
+.search {
+  width: 400px;
+  height: 35px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+  font-size: 18px;
+  color: black;
+  background-color: white;
+}
+.LogOut {
+  width: 100px;
+  height: 33px;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  color: rgb(225, 225, 225);
+  background-color: #b9090b;
+}
+.LogOut:active {
+  transform: translateY(2px);
+}
+.brand {
+  width: 140px;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}

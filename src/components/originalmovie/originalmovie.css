@@ -1,0 +1,41 @@
+.originalmovie {
+  width: 100%;
+  position: relative;
+  background-color: #141414;
+}
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+.slick {
+  width: 100%;
+}
+
+.slick-title {
+  font-size: 35px;
+  color: white;
+}
+.slick-box {
+  width: 300px !important;
+  height: 575px !important;
+  border-radius: 10px;
+  margin-top: 40px;
+  color: white;
+  cursor: pointer;
+}
+.slick-box:active {
+  transform: translateY(2px);
+}
+.slick-box h3 {
+  position: relative;
+  bottom: 100px;
+  z-index: 10;
+  text-align: center;
+  font-size: 24px;
+}
+.slick-img {
+  width: 300px;
+  height: 575px;
+  object-fit: cover;
+  border-radius: 10px;
+}

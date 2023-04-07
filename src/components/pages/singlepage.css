@@ -1,0 +1,69 @@
+.singlepage {
+  width: 100%;
+  height: 850px;
+  padding-top: 1px;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.containerrr {
+  width: 85%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  opacity: 2;
+}
+.big {
+  width: 100%;
+  height: 800px;
+  padding-left: 100px;
+  padding-top: 160px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.big h3,
+h1,
+h2 {
+  text-align: start;
+  margin-top: 40px;
+}
+.big h1 {
+  font-size: 65px;
+}
+.big h2 {
+  line-height: 40px;
+  width: 800px;
+}
+.big h3 {
+  font-size: 24px;
+}
+.watch-btn {
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 40px;
+  margin-top: 50px;
+  background-color: #b9090b;
+  color: white;
+}
+.add-list {
+  width: 170px;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 50px;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #141414;
+}
+.watch-btn:active {
+  transform: translateY(2px);
+}
+.add-list:active {
+  transform: translateY(2px);
+}

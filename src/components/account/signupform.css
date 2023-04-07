@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.containerr {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://repository-images.githubusercontent.com/299409710/b42f7780-0fe1-11eb-8460-e459acd20fb4);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+}
+.app-wrapper {
+  min-width: 350px;
+  min-height: 600px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-top: 90px;
+  margin-bottom: 40px;
+  margin-right: 100px !important;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.title {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin: 50px 0px 50px 0px;
+}
+.name,
+.email,
+.password {
+  margin: 25px;
+  color: #9e9c9c;
+  font-size: 16px;
+}
+.password {
+  margin-bottom: 40px;
+}
+.inputs {
+  height: 50px;
+  font-size: 18px;
+  outline: none;
+  width: 350px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: rgba(76, 75, 75, 0.9);
+}
+.error {
+  color: #b9090b;
+}
+.logo {
+  width: 150px;
+  height: 50px;
+  position: relative;
+  bottom: 320px;
+  right: 350px;
+}
+.submit {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 18px;
+  border-radius: 25px;
+  color: white;
+  background-color: #b9090b;
+  padding: 10px 50px;
+  margin-top: auto;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: 50px;
+  left: 120px;
+  transition: all 0.1s;
+}
+button:active {
+  transform: translateY(2px);
+}
+.form-success {
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+  min-width: 370px;
+  color: #b9090b;
+}

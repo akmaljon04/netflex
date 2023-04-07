@@ -1,0 +1,37 @@
+footer {
+  width: 100%;
+  position: relative;
+  background-color: #141414;
+}
+.cont {
+  display: flex;
+  justify-content: space-evenly;
+  color: rgb(149, 149, 149);
+}
+li {
+  list-style: none;
+  padding-top: 25px;
+}
+.ul-list {
+  margin-top: 60px;
+}
+.logoCart img {
+  margin-top: 20px;
+  margin-right: 30px;
+}
+a {
+  text-decoration: none;
+  color: rgb(149, 149, 149);
+  cursor: pointer;
+}
+.btn-footer {
+  width: 100px;
+  height: 30px;
+  border: 1px solid rgb(149, 149, 149);
+  background-color: #141414;
+  color: rgb(149, 149, 149);
+  cursor: pointer;
+}
+.btn-footer:active {
+  transform: translateY(1px);
+}
