@@ -8,7 +8,7 @@ import Footer from '../footer/footer'
 function Netflex() {
   return (
     <>
-    <Navbar/>
+      <Navbar/>
       <Population/>
       <BaseFilm/>
       <Originalmovie/>

@@ -2,6 +2,7 @@ import React, {useState,useEffect} from 'react'
 import Validation from './validation'
 import './signupform.css'
 import logo from '../../image/NetflixLogoSvg.png'
+import { Link } from 'react-router-dom'
 
 function Signupform({submitForm}) {
   const [value,setValue] = useState({
@@ -63,7 +64,8 @@ function Signupform({submitForm}) {
           {error.password && <p className='error'>{error.password}</p> }
         </div>
         <div>
-          <button className='submit' onClick={handleFormSubmit}>Sign In</button>
+            <button className='submit' onClick={handleFormSubmit} >
+              Sign In</button>
         </div>
       </form>
       </div>

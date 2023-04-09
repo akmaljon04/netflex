@@ -1,7 +1,9 @@
 import React,{useState,useEffect} from 'react'
 import './baseFilm.css'
 import { Link } from "react-router-dom";
-function BaseFilm() {
+
+
+function BaseFilm({name,image,description,create}) {
 
   const [data, setData] = useState([])
 
@@ -12,7 +14,9 @@ function BaseFilm() {
       const newArr = json.results.map(item => ({
         name:item.title,
         image:item.backdrop_path,
-        id:item.id
+        id:item.id,
+        description:item.overview,
+        create:item.release_date
         }))
         setData(newArr)
       })
@@ -24,7 +28,7 @@ function BaseFilm() {
         <h2>Kemal Keep Watching</h2>
         <div className="nextfilm">
           {data.map((post) => (
-            <Link to='/singlepage'><div className="box" key={post.id}>
+            <Link to={`/singlepage/${post.name,post.image,post.description,post.create}`}><div className="box" key={post.id}>
             <div className="top-box">
               <img className='box-foto' src={`https://images.tmdb.org/t/p/original/${post.image}`} alt="logo" />
               

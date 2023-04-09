@@ -3,7 +3,7 @@ import React,{useEffect, useState} from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 
-function Originalmovie() {
+function Originalmovie({name,image,description,create}) {
 
   const [data, setData] = useState([])
 
@@ -15,16 +15,14 @@ function Originalmovie() {
       const newArr = json.results.map(item => ({
         name:item.title,
         image:item.backdrop_path,
-        deta:item.release_date,
-        id:item.id
+        id:item.id,
+        description:item.overview,
+        create:item.release_date
         }))
         setData(newArr)
       }
       )
     },[])
-
-
-
   const settings = {dots: true,
       infinite: true,
       slidesToShow: 4,
@@ -37,11 +35,11 @@ function Originalmovie() {
     <div className='originalmovie'>
       <div className="container">
         <div className='slick'>
-          <h2 className='slick-title' key={data.id}>Netflix Originals</h2>
+          <h2 className='slick-title'>Netflix Originals</h2>
           <Slider {...settings}>
             {data.map((post) => (
-              <Link to="/singlepage">
-                <div className='slick-box'>
+              <Link to={`/singlepage/${post.name,post.image,post.description,post.create}`}>
+                <div className='slick-box' key={post.id}>
                 <img className='slick-img' src={`https://images.tmdb.org/t/p/original/${post.image}`} alt="logo" />
                 <h3>{post.name}</h3>
               </div></Link>
