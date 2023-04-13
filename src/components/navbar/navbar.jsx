@@ -1,9 +1,7 @@
 import './navbar.css'
 import logo from '../../image/NetflixLogoSvg.png'
 
-
 export default function Navbar() {
-
 
   return (
     <nav className='navbar'>

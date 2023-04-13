@@ -1,11 +1,12 @@
 import './originalmovie.css'
-import React,{useEffect, useState} from "react";
+import React,{ useEffect, useState} from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 
-function Originalmovie({name,image,description,create}) {
+function Originalmovie() {
 
   const [data, setData] = useState([])
+
 
   useEffect(() => {
     fetch('https://api.themoviedb.org/3/search/movie?api_key=457378a61c7657d583afb794b5f60e44&query=john&page=2')
@@ -38,7 +39,7 @@ function Originalmovie({name,image,description,create}) {
           <h2 className='slick-title'>Netflix Originals</h2>
           <Slider {...settings}>
             {data.map((post) => (
-              <Link to={`/singlepage/${post.name,post.image,post.description,post.create}`}>
+              <Link to={`/singlepage/`}>
                 <div className='slick-box' key={post.id}>
                 <img className='slick-img' src={`https://images.tmdb.org/t/p/original/${post.image}`} alt="logo" />
                 <h3>{post.name}</h3>

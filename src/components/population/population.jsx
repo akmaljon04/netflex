@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import logowatch from '../../image/play-fill.svg'
 
 
-function Population({name,image,create,description}) {
+function Population() {
   const [data, setData] = useState([])
 
     useEffect(() => {
@@ -60,7 +60,7 @@ function Population({name,image,create,description}) {
             <div className="swiper-wrapper" key={data.id}>
               {data.map((post) => (
                 <div className="swiper-slide" key={post.id}>
-                  <Link to={`/singlepage/${post.name,post.image,post.description,post.create}`}><img className='swiper-img' src={`https://images.tmdb.org/t/p/original/${post.image}`} alt="logo" /></Link>
+                  <Link to={`/singlepage/`}><img className='swiper-img' src={`https://images.tmdb.org/t/p/original/${post.image}`} alt="logo" /></Link>
                   <h3 style={{color:'white'}}>{post.name}</h3>
                 </div> 
               ))}

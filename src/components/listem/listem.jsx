@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import './listem.css'
 import { Link } from "react-router-dom";
-function Listem({name,image,description,create}) {
+function Listem() {
 
   const [data, setData] = useState([])
 
@@ -29,7 +29,7 @@ function Listem({name,image,description,create}) {
         <h2>Listem</h2>
         <div className="list" key={data.id}>
           {data.map((post) => (
-            <Link to={`/singlepage/${post.name,post.image,post.description,post.create}`}><div className="cart">
+            <Link to={`/singlepage/`}><div className="cart">
             <div className="top-cart">
               <img className='cart-foto' src={`https://images.tmdb.org/t/p/original/${post.image}`} alt="logo" />
             </div>
